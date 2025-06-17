@@ -1,0 +1,84 @@
+body{
+    background-color: #BF800A;
+    color: #F6F6F6;
+}
+.texto{
+    display: block;
+    position: absolute; /* Posiciona o elemento de forma absoluta */
+    top: 30%; /* 100px do topo da tela */
+    left: 30%;/* 50px da esquerda da tela */
+    text-align: justify;
+    width: 300px;    
+
+}
+.texto strong{
+    color: #30838C;
+
+}
+.texto .texto__1{
+    font-family: 'Krona One', sans-serif;
+    
+}
+.texto .texto__2{
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 15px;
+}
+
+.imagem{
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 10%;
+    left: 50%;  
+
+}
+
+.botoes {
+    display: flex;
+    gap: 50px; /* Espaço entre os botões */
+    justify-content: center;
+    margin-top: 450px;
+    margin-right: 500px;
+    
+}
+
+.botao {
+    text-decoration: none;
+    background-color: #30838C;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+    display: inline-block; /* Evita que o espaço entre os botões seja clicável */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.botao:hover {
+    background-color: #592202;
+}
+
+.github {
+    background-color: #30838C;
+}
+
+.github:hover {
+    background-color: #592202;
+}
+
+.footer{
+    background-color: #2B8C8C;
+    position: fixed;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+}
+
+.footer .footer__text{
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-family: Arial ;
+    
+
+}
