@@ -1,84 +1,326 @@
-body{
-    background-color: #BF800A;
-    color: #F6F6F6;
-}
-.texto{
-    display: block;
-    position: absolute; /* Posiciona o elemento de forma absoluta */
-    top: 30%; /* 100px do topo da tela */
-    left: 30%;/* 50px da esquerda da tela */
-    text-align: justify;
-    width: 300px;    
-
-}
-.texto strong{
-    color: #30838C;
-
-}
-.texto .texto__1{
-    font-family: 'Krona One', sans-serif;
-    
-}
-.texto .texto__2{
-    font-family: 'Open Sans', sans-serif;
-    margin-top: 15px;
+* {
+   /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.imagem{
-    width: 300px;
-    height: 300px;
-    position: fixed;
-    top: 10%;
-    left: 50%;  
-
+html{
+    width: 100vw;
+    min-width: 320px;
+    height: auto;
+    min-height: 100vh;
+    overflow-x: hidden;    
 }
 
-.botoes {
-    display: flex;
-    gap: 50px; /* Espaço entre os botões */
-    justify-content: center;
-    margin-top: 450px;
-    margin-right: 500px;
-    
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #034159;
+    width: 100%;
+    height: auto;
 }
 
-.botao {
-    text-decoration: none;
-    background-color: #30838C;
+.introducao {
     color: white;
-    padding: 12px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: 0.3s;
-    display: inline-block; /* Evita que o espaço entre os botões seja clicável */
-    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    margin-top: 4rem;
+    gap: 3rem;
 }
 
-.botao:hover {
-    background-color: #592202;
-}
-
-.github {
-    background-color: #30838C;
-}
-
-.github:hover {
-    background-color: #592202;
-}
-
-.footer{
-    background-color: #2B8C8C;
-    position: fixed;
-    bottom: 10px;
-    right: 0;
-    left: 0;
-}
-
-.footer .footer__text{
-    height: 30px;
+.box {
+    width: 20%;
+    text-align: justify;
     text-align: center;
-    line-height: 30px;
-    font-family: Arial ;
-    
+}
 
+.introducao__titulo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #0CF25D;
+}
+
+.introducao__titulo span {
+    font-weight: 800;
+    color: antiquewhite;
+}
+
+.introducao__texto {
+    text-align: justify;
+    line-height: 1.6;
+    margin-top: 1rem;
+}
+
+.imagem_introduçao {
+    height: 50vh;
+    width: auto;
+    aspect-ratio: 1/1;
+    filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 1));
+}
+
+
+.projetos__titulo {
+    display: flex;
+    background-image: linear-gradient(90deg, #025951 0%, #02735E 50%, #0CF25D 100%);
+    margin-top: 4rem;
+    padding: 1rem 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.projetos {
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    gap: 4rem;
+    color: white;
+    justify-content: center;
+}
+
+.projeto {
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem 1rem 0 0;
+    width: 30%;
+    height: 400px;
+    position: relative;
+}
+
+.projeto__imagem img {
+    height: auto;
+    width: 100%;
+    max-width: 24vw;
+    border-radius: 0.5rem;
+}
+
+.projeto:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 1);
+}
+
+.projeto__titulo {
+    margin: 1rem;
+}
+
+.projeto__descricao {
+    margin: 10px;
+}
+
+
+.projeto__descricao_texto {
+    text-align: justify;
+    margin: 10px;
+}
+
+.language {
+    position: relative;
+    width: 120px;
+    margin-left: 40px;
+    font-weight: bold;
+}
+
+.language-selected {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.language-selected::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(https://flagsapi.com/BR/flat/64.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.language-selected.change-br::before {
+    background-image: url(https://flagsapi.com/BR/flat/64.png);
+}
+
+.language-selected.change-en::before {
+    background-image: url(https://flagsapi.com/US/flat/64.png);
+}
+
+.language ul {
+    position: absolute;
+    width: 140px;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    padding-top: 10px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.language ul li {
+    list-style: none;
+}
+
+.language ul li a {
+    display: block;
+    color: #252525;
+    padding-top: 5px 10px;
+}
+
+.language ul li:hover {
+    background-color: #f8f8f8;
+}
+
+.language ul li a::before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+a.br::before {
+    background-image: url(https://flagsapi.com/BR/flat/64.png);
+}
+
+a.en::before {
+    background-image: url(https://flagsapi.com/US/flat/64.png);
+}
+
+.language:hover ul {
+    display: block;
+}
+
+.box_footer {
+    padding: 1rem;
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.button_footer {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+.button_footer button {
+    background: #252525;
+    font-weight: 800;
+    border: none;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.button_footer button:hover {
+    box-shadow: 10px 10px rgba(0, 0, 0, 1);
+}
+
+.button_footer button a {
+    text-decoration: none;
+    color: white;
+}
+
+.contato {
+    flex-basis: 100%;
+    width: 10rem;
+    height: auto;
+    padding: 1rem;
+    background-color: #252525;
+    color: white;
+    letter-spacing: 1px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+    line-height: 1.6;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 1.1px;
+    padding: 1rem;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+dialog {
+    background-color: #034159;
+    width: 30%;
+    border-radius: 10px;
+    align-items: center;
+    text-align: justify;
+    box-shadow: 0 10px 24px rgba(255, 255, 255, 0.7);
+    color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+dialog .projeto__descricao_texto {
+    padding: 1rem;
+    line-height: 1.3;
+    text-align: start;
+}
+
+dialog .button_closed {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.fechar_botao {
+    color: #fff;
+    background: #252525;
+    font-weight: 800;
+    border: none;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.fechar_botao:hover {
+    box-shadow: 10px 10px rgba(0, 0, 0, 1);
+}
+
+.button_explicacao {
+    color: #fff;
+    background: #252525;
+    font-weight: 800;
+    border: none;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    margin-top: 1rem;
+    position: absolute;
+    bottom: 24px;
+    left: 50%;  
+    transform: translateX(-50%);
+}
+
+.button_explicacao:hover {
+    box-shadow: 10px 10px rgba(0, 0, 0, 1);
 }

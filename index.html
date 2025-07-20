@@ -1,42 +1,192 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
-    <link rel="stylesheet" href="reset.css">    
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header></header>
-
-
     <main>
-        <div class="texto">
-            <h1 class="texto__1">Eleve seu negócio digital a outro nível 
-                <strong class="strong__texto">com um Front-end de qualidade!</strong>
-            </h1>
-            <p class="texto__2">Olá! Sou Arthur Queiroz, desenvolvedor Front-end com especialidade em HTML e CSS. 
-                Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
-        </div> 
+        <div class="language">
+            <div class="language-selected flag-br">
+                <span id="language-label">pt-BR</span>
+            </div>
 
-        <div class="botoes">
-            <a href="https://www.linkedin.com/in/arthurqueiroz12/" class="botao linkedin">Linkedin</a>
-            <a href="https://github.com/ArthurLimaQz" class="botao github">Github</a>
+            <ul id="trocarIdioma">
+                <li><a href="#" class="br">Português</a></li>
+                <li><a href="#" class="en">English</a></li>
+            </ul>
         </div>
+        <section class="introducao">
+            <div class="box">
+                <h1 class="introducao__titulo" id="nome">Quem é <span>Arthur Queiroz?</span></h1>
+                <div class="introducao__texto">
+                    <p id="apresentacao">
+                        Me chamo Arthur Queiroz, sou estudante de Análise e Desenvolvimento de Sistemas com foco em
+                        trazer inovação e satisfação para as pessoas. Tenho experiências práticas no ramo de projetos,
+                        estruturação de projetos e algumas linguagens
+                        como Python, JS, SQL, MYSQL e etc. Possuo conhecimento nas metodologias ágeis como Scrum e
+                        Kanban.
+                        Meu foco hoje é mostrar como podemos trazer a satisfação para os clientes pela página web.
+                    </p>
+                </div>
+            </div>
 
-        <div class="imagem">
-            <img src="imagem/Imagem.png" alt="Pessoa programando">
-        </div>
+            <div class="introducao__imagem">
+                <img class="imagem_introduçao" src="imagem/Foto de perfil para redes sociais gradiente simples.png"
+                    alt="Minha imagem apoiando a cabeça">
+            </div>
+        </section>
+
+        <section>
+            <h2 class="projetos__titulo" id="projetos_academicos">Projetos Acadêmicos</h2>
+            <div class="projetos">
+                <article class="projeto"> <!--PROJETO 1 -->
+                    <h3 class="projeto__titulo" id="title_1">Reimaginando a UX da Americanas: Proposta de Framework de
+                        Gestão</h3>
+                    <div class="projeto__imagem">
+                        <a href="https://pi-ihc-americanas.vercel.app/">
+                            <img src="imagem/americanas.png" alt="Imagem do Projeto X">
+                        </a>
+                    </div>
+                    <button class="button_explicacao" id="button_modal">
+                        <p class="projeto__descricao">Explicação</p>
+                    </button>
+                    <dialog id="dialog_1">
+                        <p class="projeto__descricao_texto" id="explicacao_1">Este projeto teve como objetivo principal
+                            otimizar a experiência
+                            do usuário no site da
+                            Americanas, por meio da aplicação de princípios de usabilidade, acessibilidade e design
+                            moderno.
+                            A equipe desenvolveu uma nova interface com foco em navegação intuitiva, menus dinâmicos,
+                            filtros mais precisos de produtos e a remoção de elementos intrusivos como pop-ups e
+                            anúncios
+                            inadequados.
+
+                            Foi implementado também um bot de atendimento virtual, garantindo suporte rápido e eficiente
+                            ao
+                            usuário. A interface foi desenvolvida com HTML, CSS e JavaScript e organizada com boas
+                            práticas
+                            de modularização no VSCode, considerando padrões de acessibilidade e design responsivo.
+
+                            O projeto utilizou o Design Thinking em todas as etapas: desde a empatia com o usuário e
+                            definição dos problemas até a ideação, prototipagem e testes de usabilidade. Além disso,
+                            aplicamos conceitos de Gestão Estratégica de TI, assegurando alinhamento com os objetivos da
+                            empresa, escalabilidade das soluções e governança tecnológica.
+
+                            Como resultado, entregamos uma proposta funcional e inovadora, que melhora
+                            significativamente a
+                            experiência do cliente, reforça a presença digital da marca e prepara a base para
+                            crescimento
+                            sustentável e contínuo da plataforma.</p>
+                        <div class="button_closed">
+                            <button class="fechar_botao" id="button_closed">Fechar</button>
+                        </div>
+                    </dialog>
+                </article>
+
+                <article class="projeto"> <!--PROJETO 2 -->
+                    <h3 class="projeto__titulo" id="title_2">Sistema Web de Registro de Cartório</h3>
+                    <div class="projeto__imagem">
+                        <a href="https://sistema-web-do-cart-rio.onrender.com/">
+                            <img src="imagem/cartório.png" alt="Imagem do Projeto X2">
+                        </a>
+                    </div>
+                    <button class="button_explicacao" id="button_explicacao2">
+                        <p class="projeto__descricao">Explicação</p>
+                    </button>
+                    <dialog id="dialog_2">
+                        <p class="projeto__descricao_texto" id="explicacao_2">
+                            Este projeto é um Sistema Web de Registro de Cartório desenvolvido com Python (usando o
+                            framework Flask), MySQL, HTML5 e CSS3. Ele permite o cadastro de usuários com senhas
+                            criptografadas utilizando o algoritmo bcrypt, garantindo segurança no armazenamento de dados
+                            sensíveis. A aplicação também possibilita o registro de nascimentos, com campos como livro,
+                            folha, termo, nome do registrado, data de nascimento, e nome dos pais. Outra funcionalidade
+                            importante é a exibição do último registro feito no banco de dados, permitindo uma
+                            visualização
+                            rápida e prática. O sistema possui autenticação de administrador, com controle de acesso via
+                            login, e fornece mensagens de validação com o uso do recurso flash(). A estrutura do projeto
+                            foi
+                            organizada de forma modular, com pastas separadas para templates, arquivos estáticos e
+                            rotas,
+                            facilitando manutenção e expansão. A integração com o banco de dados MySQL é feita por
+                            comandos
+                            SQL e uso de cursores, garantindo performance e confiabilidade. Este projeto reflete boas
+                            práticas de desenvolvimento web, foco na segurança, usabilidade e organização do código,
+                            sendo
+                            aplicável a ambientes reais.
+                        </p>
+                        <div class="button_closed">
+                            <button class="fechar_botao" id="button_closed2">Fechar</button>
+                        </div>
+                    </dialog>
+                </article>
+
+                <article class="projeto"> <!--PROJETO 3 -->
+                    <h3 class="projeto__titulo" id="title_3">Projeto NLW com inteligência artificial aplicada</h3>
+                    <div class="projeto__imagem">
+                        <a href="https://nlw-arthur-queirozs-projects-3532e8c8.vercel.app/">
+                            <img src="imagem/image.png" alt="Imagem do Projeto X3">
+                        </a>
+                    </div>
+
+                    <button class="button_explicacao" id="button_explicacao3">
+                        <p class="projeto__descricao">Explicação</p>
+                    </button>
+                    <dialog id="dialog_3">
+                        <p class="projeto__descricao_texto" id="explicacao_3">
+                            Projeto desenvolvido durante a NLW Agents da Rocketseat, com foco em integrar inteligência
+                            artificial a aplicações web. Utiliza HTML, CSS e JavaScript para criar uma interface que
+                            permite
+                            interações com a API da OpenAI, exibindo respostas em formato renderizado com markdown.
+                            Ideal
+                            para praticar integração com IA e desenvolvimento front-end moderno.
+                        </p>
+                        <div class="button_closed">
+                            <button class="fechar_botao" id="button_closed3">Fechar</button>
+                        </div>
+                    </dialog>
+                </article>
+            </div>
+        </section>
+        <div class="projetos__titulo" id="contato">Contato</div>
     </main>
-    
+
     <footer>
+        <div class="box_footer">
+            <div class="button_footer">
+                <button type="button">
+                    <a href="https://www.linkedin.com/in/arthurlimaqz/">Linkedin</a></button>
+                <button type="button">
+                    <a href="https://github.com/ArthurLimaQz">GitHub</a>
+                </button>
+                <div class="contato">
+                    <h3>Telefone:</h3>
+                    <p>(35) 9.9937-2321</p>
+                    <h3>E-mail:</h3>
+                    <p>arthur.queiroz@sou.unifeob.edu.br</p>
+                </div>
+            </div>
+            <img class=".imagem_introduçao" src="imagem/Foto para perfil simples com borda azul .png">
+        </div>
         <div class="footer">
-            <p class="footer__text">copyright (©) Arthur Queiroz 2025</p>
+            <p>copyright (©) Arthur Queiroz 2025</p>
         </div>
     </footer>
-    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+    <script src="modal.js"></script>
 </body>
 
-</html> 
+</html>
