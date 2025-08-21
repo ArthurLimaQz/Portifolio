@@ -1,0 +1,134 @@
+@import url(./reset.css);
+@media screen and (max-width: 768px) {
+
+    main {
+        width: 100%;
+    }
+
+    .introducao {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 1rem;
+    }
+
+    .box {
+        display: flex;
+        width: 20rem;
+        margin: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .introducao__titulo {
+        text-align: center;
+        width: auto;
+        font-size: 32px;
+        font-weight: 800;
+        letter-spacing: 2px;
+    }
+
+    .introducao__texto {
+        width: 80%;
+        font-size: 16px;
+        text-align: justify;
+        letter-spacing: 1px;
+    }
+
+    .introducao__imagem {
+        display: none;
+    }
+
+    .introducao__imagem_mobile {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .imagem_introduçao {
+        width: auto;
+        height: 20rem;
+    }
+
+    .projetos {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projeto {
+        width: 75%;
+        height: 23rem;
+        margin: auto;
+        border-radius: 50px 0 30px 80px;
+        box-shadow: 0px 8px 16px 8px black;
+    }
+
+    .projeto:hover {
+        box-shadow: 0px 8px 16px 8px black;
+
+    }
+
+
+    .projeto__titulo {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .projeto__imagem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .projeto__imagem img {
+        width: 100%;
+        max-width: 340px
+    }
+
+    .button_explicacao:hover {
+        box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .diolog {
+        width: 70%;
+        height: 70%;
+        max-height: 50rem;
+        font-size: 16px;
+        overflow-y: auto;
+    }
+
+    .box_footer {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button_footer {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .button_footer button {
+        box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .button_footer button:hover {
+        box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+    }
+}
