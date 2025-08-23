@@ -15,7 +15,7 @@
 
     .box {
         display: flex;
-        width: 20rem;
+        width: 80%;
         margin: auto;
         flex-direction: column;
         flex-wrap: wrap;
@@ -25,7 +25,7 @@
 
     .introducao__titulo {
         text-align: center;
-        width: auto;
+        width: 80%;
         font-size: 32px;
         font-weight: 800;
         letter-spacing: 2px;
