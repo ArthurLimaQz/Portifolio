@@ -6,7 +6,7 @@ $(function () {
             .removeClass("change-en")
             .addClass("change-br");
 
-        $("#title_1").text("Reimaginando a UX da Americanas: Proposta de Framework de Gestão");
+        $("#title_1").text("UI e UX da Americanas");
         $("#nome").html("Quem é <span>Arthur Queiroz?</span>");
         $("#projetos_academicos").text("Projetos Acadêmicos");
         $(".projeto__descricao").text("Explicação");
@@ -49,9 +49,17 @@ $(function () {
                  garantindo performance e confiabilidade. Este projeto reflete boas práticas de desenvolvimento web, foco na segurança,
                   usabilidade e organização do código, sendo aplicável a ambientes reais.`);
         $("#title_2").text("Sistema Web de Registro de Cartório");
-        $("#title_3").text("Projeto NLW com inteligência artificial aplicada");
+        $("#title_3").text("NLW com inteligência artificial aplicada");
         $("#explicacao_3").text(`TProjeto desenvolvido durante a NLW Agents da Rocketseat, com foco em integrar inteligência artificial a aplicações web. Utiliza HTML, CSS e JavaScript para criar uma interface que permite interações com a API da OpenAI, exibindo respostas em formato renderizado com markdown. Ideal para praticar integração com IA e desenvolvimento front-end moderno.`);
-
+        $("#title_4").text("My server");
+        $("#explicacao_4").text(`Escolha seu Plano é um projeto front-end desenvolvido com HTML5, CSS3,
+             que simula uma landing page de apresentação de planos de assinatura.
+              O objetivo é oferecer uma interface clara e responsiva onde o usuário pode comparar três planos
+               (Essencial, Premium e Gold), visualizando preços, benefícios e botões de ação.
+                O layout foi construído com foco em design moderno, usabilidade e responsividade, utilizando conceitos como flexbox,
+                 componentização de cards e deploy na Vercel. Esse projeto me permitiu aprimorar habilidades em estruturação semântica,
+                  estilização avançada e publicação de sites, sendo uma base sólida para páginas comerciais reais.`);
+        $(".fechar_botao").text("Fechar")
     });
 
     $(".en").click(function (e) {
@@ -61,7 +69,7 @@ $(function () {
             .removeClass("change-br")
             .addClass("change-en");
 
-        $("#title_1").text("Reimagining the UX of Americanas: Management Framework Proposal");
+        $("#title_1").text("UI and UX of Americanas");
         $("#nome").html("Who is <span>Arthur Queiroz?</span>");
         $("#projetos_academicos").text("Academic Projects");
         $(".projeto__descricao").text("Explanation");
@@ -89,7 +97,14 @@ Another important feature is the display of the most recent record stored in the
 This project reflects best practices in web development, with a focus on security, usability, and code organization, making it suitable
  for real-world environments.`);
         $("#title_2").text("Web-based Notary Registration System");
-        $("#title_3").text("NLW Project with Applied Artificial Intelligence");
+        $("#title_3").text("NLW Applied Artificial Intelligence");
         $("#explicacao_3").text(`Project developed during Rocketseat's NLW Agents, focusing on integrating artificial intelligence into web applications. It uses HTML, CSS, and JavaScript to create an interface that enables interactions with the OpenAI API, displaying responses rendered in markdown format. Ideal for practicing AI integration and modern front-end development.`);
+        $("#title_4").text("My server");
+        $("#explicacao_4").text(`Choose Your Plan is a front-end project developed with HTML5, CSS3, which simulates a landing page for presenting subscription plans. 
+            The goal is to provide a clear and responsive interface where users can compare three plans (Essential, Premium, and Gold),
+             viewing prices, benefits, and call-to-action buttons. The layout was built with a focus on modern design, usability, and responsiveness,
+              using concepts such as flexbox, card componentization, and deployment on Vercel. This project allowed me to improve my skills in semantic
+               structuring, advanced styling, and website deployment, serving as a solid foundation for real commercial pages.`);
+        $(".fechar_botao").text("close")
     });
 });

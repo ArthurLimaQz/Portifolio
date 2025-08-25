@@ -11,6 +11,11 @@ const modal_3 = document.getElementById ("dialog_3")
 const button_closed3 = document.getElementById ("button_closed3")
 
 
+const button_4 = document.getElementById ("button_explicacao4")
+const modal_4 = document.getElementById ("dialog_4")
+const button_closed4 = document.getElementById ("button_closed4")
+
+
 
 
 button.onclick = function (){
@@ -35,5 +40,13 @@ button_3.onclick = function() {
 
 button_closed3.onclick = function () {
     modal_3.close()
+}
+
+button_4.onclick = function() {
+    modal_4.showModal()
+}
+
+button_closed4.onclick = function() {
+    modal_4.close()
 }
 
