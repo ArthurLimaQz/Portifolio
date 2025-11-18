@@ -14,9 +14,9 @@ Aqui estão alguns projetos que desenvolvi e que estão no meu portfólio:
 
 | Projeto | Descrição | Tecnologias usadas | Link |
 |---|---|---|---|
-| **UI e UX da Americanas** | Breve descrição do que o projeto faz | HTML, CSS, JavaScript | [Veja no GitHub / Demo](/https://pi-ihc-americanas.vercel.app/) |
-| **Sistema Web de Registro de Cartório** | Outra descrição interessante | Python, HTML5, CSS3, MySQL, Flask | [Veja no GitHub / Demo](https://sistema-web-do-cart-rio.onrender.com/) |
-| **PNLW com inteligência artificial aplicada** | Meu site pessoal / portfólio | HTML, CSS, JS | [Visitar Site](https://nlw-arthur-queirozs-projects-3532e8c8.vercel.app/) |
+| **UI e UX da Americanas** | Breve descrição do que o projeto faz | HTML, CSS, JavaScript | [Veja no GitHub / Demo](https://github.com/ArthurLimaQz/Melhorias-UX-no-site-Americanas-Framework-para-Gest-o) |
+| **Sistema Web de Registro de Cartório** | Outra descrição interessante | Python, HTML5, CSS3, MySQL, Flask | [Veja no GitHub / Demo](https://github.com/ArthurLimaQz/SISTEMA_WEB_DO_CART-RIO) |
+| **PNLW com inteligência artificial aplicada** | Meu site pessoal / portfólio | HTML, CSS, JS | [Visitar Site](https://github.com/ArthurLimaQz/NLW) |
 
 ## 🛠️ Tecnologias e Ferramentas
 
