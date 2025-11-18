@@ -16,7 +16,7 @@ Aqui estão alguns projetos que desenvolvi e que estão no meu portfólio:
 |---|---|---|---|
 | **UI e UX da Americanas** | Breve descrição do que o projeto faz | HTML, CSS, JavaScript | [Veja no GitHub / Demo](https://github.com/ArthurLimaQz/Melhorias-UX-no-site-Americanas-Framework-para-Gest-o) |
 | **Sistema Web de Registro de Cartório** | Outra descrição interessante | Python, HTML5, CSS3, MySQL, Flask | [Veja no GitHub / Demo](https://github.com/ArthurLimaQz/SISTEMA_WEB_DO_CART-RIO) |
-| **PNLW com inteligência artificial aplicada** | Meu site pessoal / portfólio | HTML, CSS, JS | [Visitar Site](https://github.com/ArthurLimaQz/NLW) |
+| **PNLW com inteligência artificial aplicada** | Meu site pessoal / portfólio | HTML, CSS, JS | [Veja no GitHub / Demo](https://github.com/ArthurLimaQz/NLW) |
 
 ## 🛠️ Tecnologias e Ferramentas
 
