@@ -1,255 +1,420 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
-    <link rel="stylesheet" href="/SRC/global/reset.css">
-    <link rel="stylesheet" href="/SRC/style/style.css">
-    <link rel="stylesheet" href="/SRC/style/responsive.css">
-    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Arthur Queiroz">
+  <meta name="description"
+    content="Desenvolvedor formado em Análise e Desenvolvimento de Sistemas, com foco em JavaScript e desenvolvimento web. Construo soluções modernas, performáticas e bem estruturadas.">
+  <link rel="stylesheet" href="/src/global/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_outward" />
+  <link rel="stylesheet" href="/src/style/style.css">
+  <title>Arthur Queiroz - Front End Developer</title>
 </head>
 
 <body>
-    <main>
-        <div class="language">
-            <div class="language-selected flag-br">
-                <span id="language-label">pt-BR</span>
-            </div>
+  <div class="container">
+    <header class="header">
+      <nav class="nav">
+        <a class="logo" href="#">portfolio.dev</a>
+        <ul class="navUl">
+          <li>
+            <a href="#stacks">.stacks()</a>
+          </li>
+          <li>
+            <a href="#projects">.projetos()</a>
+          </li>
+          <li>
+            <a href="#contact">.contato()</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <p class="hero__code">// hello world</p>
+      <h1 class="hero__title">Eu sou <span>Dev</span></h1>
+      <span class="hero__carroceu" id="role"></span>
+      <div class="hero__actions">
+        <a href="#projects" class="hero__button hero__button--primary">Ver projetos</a>
+        <a href="#contact" class="hero__button hero__button--secondary">Contato</a>
+      </div>
+    </section>
+  </div>
+  <main class="main">
+    <div class="tech">
+      <section id="stacks" class="tech__stacks">
+        <div class="tech__header header">
+          <p class="tech__code">// minhas tecnologias</p>
 
-            <ul id="trocarIdioma">
-                <li><a href="#" class="br">Português</a></li>
-                <li><a href="#" class="en">English</a></li>
-            </ul>
+          <h2 class="tech__title">Tech <span>Stacks</span></h2>
         </div>
-        <section class="introducao">
-            <div class="box">
-                <h1 class="introducao__titulo" id="nome">Quem é <span>Arthur Queiroz?</span></h1>
-                <div class="introducao__imagem_mobile">
-                    <img class="imagem_introduçao" src="/SRC/assets/image/Foto de perfil para redes sociais gradiente simples.png"
-                        alt="Minha imagem apoiando a cabeça">
+        <article class="tech__category frontend"> <!--Frontend-->
+          <p class="tech__category-title">Frontend</p>
+
+          <ul class="tech__list">
+            <li class="tech__item">
+              <div class="tech__skill">
+                <div class="boxporcentagem">
+                  <p class="tech__skill-name">HTML/CSS</p>
+                  <span>80%</span>
                 </div>
-                <div class="introducao__texto">
-                    <p id="apresentacao">
-                        Eu me chamo Arthur Queiroz, sou estudante de Análise e Desenvolvimento de Sistemas, com foco em
-                        trazer inovação e satisfação para as pessoas. Tenho experiências práticas na área de projetos,
-                        incluindo sua estruturação, além de conhecimento em linguagens e tecnologias como Python,
-                        JavaScript, SQL, MySQL, HTML e CSS. Também possuo familiaridade com metodologias ágeis, como
-                        Scrum e Kanban.
-                        Atualmente, meu objetivo é mostrar como podemos proporcionar maior satisfação aos clientes por
-                        meio de páginas web.
-                    </p>
+                <progress class="tech__progress" value="80" max="100">80%</progress>
+              </div>
+            </li>
+            <li class="tech__item">
+              <div class="tech__skill">
+                <div class="boxporcentagem">
+                  <p class="tech__skill-name">React</p>
+                  <span>0%</span>
                 </div>
-            </div>
-            <div class="introducao__imagem">
-                <img class="imagem_introduçao" src="/SRC/assets/image/Foto de perfil para redes sociais gradiente simples.png"
-                    alt="Minha imagem apoiando a cabeça">
-            </div>
-        </section>
-
-        <section class="container">
-            <h2 class="projetos__titulo" id="projetos_academicos">Projetos Acadêmicos</h2>
-            <div class="projetos">
-                <article class="projeto"> <!--PROJETO 1 -->
-                    <h3 class="projeto__titulo" id="title_1">UI e UX da Americanas</h3>
-
-                    <div class="projeto__imagem ">
-                        <a href="https://pi-ihc-americanas.vercel.app/">
-                            <img src="/SRC/assets/image/americanas.png" alt="Imagem do Projeto X">
-                        </a>
-                    </div>
-                    <button class="button_explicacao" id="button_modal">
-                        <p class="projeto__descricao">Explicação</p>
-                    </button>
-                    <dialog class="diolog" id="dialog_1">
-                        <div class="dialog-container">
-                            <p class="projeto__descricao_texto" id="explicacao_1">Este projeto teve como objetivo
-                                principal
-                                otimizar a experiência
-                                do usuário no site da
-                                Americanas, por meio da aplicação de princípios de usabilidade, acessibilidade e design
-                                moderno.
-                                A equipe desenvolveu uma nova interface com foco em navegação intuitiva, menus
-                                dinâmicos,
-                                filtros mais precisos de produtos e a remoção de elementos intrusivos como pop-ups e
-                                anúncios
-                                inadequados.
-
-                                Foi implementado também um bot de atendimento virtual, garantindo suporte rápido e
-                                eficiente
-                                ao
-                                usuário. A interface foi desenvolvida com HTML, CSS e JavaScript e organizada com boas
-                                práticas
-                                de modularização no VSCode, considerando padrões de acessibilidade e design responsivo.
-
-                                O projeto utilizou o Design Thinking em todas as etapas: desde a empatia com o usuário e
-                                definição dos problemas até a ideação, prototipagem e testes de usabilidade. Além disso,
-                                aplicamos conceitos de Gestão Estratégica de TI, assegurando alinhamento com os
-                                objetivos da
-                                empresa, escalabilidade das soluções e governança tecnológica.
-
-                                Como resultado, entregamos uma proposta funcional e inovadora, que melhora
-                                significativamente a
-                                experiência do cliente, reforça a presença digital da marca e prepara a base para
-                                crescimento
-                                sustentável e contínuo da plataforma.</p>
-                            <div class="button_closed">
-                                <button class="fechar_botao" id="button_closed">Fechar</button>
-                            </div>
-                        </div>
-                    </dialog>
-                </article>
-
-                <article class="projeto"> <!--PROJETO 2 -->
-                    <h3 class="projeto__titulo" id="title_2">Sistema Web de Registro de Cartório</h3>
-                    <div class="projeto__imagem">
-                        <a href="https://sistema-web-do-cart-rio.onrender.com/">
-                            <img src="/SRC/assets/image/cartório.png" alt="Imagem do Projeto X2">
-                        </a>
-                    </div>
-                    <button class="button_explicacao" id="button_explicacao2">
-                        <p class="projeto__descricao">Explicação</p>
-                    </button>
-                    <dialog class="diolog" id="dialog_2">
-                        <div class="dialog-container">
-                            <p class="projeto__descricao_texto" id="explicacao_2">
-                                Este projeto é um Sistema Web de Registro de Cartório desenvolvido com Python (usando o
-                                framework Flask), MySQL, HTML5 e CSS3. Ele permite o cadastro de usuários com senhas
-                                criptografadas utilizando o algoritmo bcrypt, garantindo segurança no armazenamento de
-                                dados
-                                sensíveis. A aplicação também possibilita o registro de nascimentos, com campos como
-                                livro,
-                                folha, termo, nome do registrado, data de nascimento, e nome dos pais. Outra
-                                funcionalidade
-                                importante é a exibição do último registro feito no banco de dados, permitindo uma
-                                visualização
-                                rápida e prática. O sistema possui autenticação de administrador, com controle de acesso
-                                via
-                                login, e fornece mensagens de validação com o uso do recurso flash(). A estrutura do
-                                projeto
-                                foi
-                                organizada de forma modular, com pastas separadas para templates, arquivos estáticos e
-                                rotas,
-                                facilitando manutenção e expansão. A integração com o banco de dados MySQL é feita por
-                                comandos
-                                SQL e uso de cursores, garantindo performance e confiabilidade. Este projeto reflete
-                                boas
-                                práticas de desenvolvimento web, foco na segurança, usabilidade e organização do código,
-                                sendo
-                                aplicável a ambientes reais.
-                            </p>
-                            <div class="button_closed">
-                                <button class="fechar_botao" id="button_closed2">Fechar</button>
-                            </div>
-                        </div>
-                    </dialog>
-                </article>
-
-                <article class="projeto"> <!--PROJETO 3 -->
-                    <h3 class="projeto__titulo" id="title_3">NLW com inteligência artificial aplicada</h3>
-                    <div class="projeto__imagem">
-                        <a href="https://nlw-arthur-queirozs-projects-3532e8c8.vercel.app/">
-                            <img src="/SRC/assets/image/image.png" alt="Imagem do Projeto X3">
-                        </a>
-                    </div>
-
-                    <button class="button_explicacao" id="button_explicacao3">
-                        <p class="projeto__descricao">Explicação</p>
-                    </button>
-                    <dialog class="diolog" id="dialog_3">
-                        <div class="dialog-container">
-                            <p class="projeto__descricao_texto" id="explicacao_3">
-                                Projeto desenvolvido durante a NLW Agents da Rocketseat, com foco em integrar
-                                inteligência
-                                artificial a aplicações web. Utiliza HTML, CSS e JavaScript para criar uma interface que
-                                permite
-                                interações com a API da OpenAI, exibindo respostas em formato renderizado com markdown.
-                                Ideal
-                                para praticar integração com IA e desenvolvimento front-end moderno.
-                            </p>
-                            <div class="button_closed">
-                                <button class="fechar_botao" id="button_closed3">Fechar</button>
-                            </div>
-                        </div>
-                    </dialog>
-                </article>
-                <article class="projeto"> <!--PROJETO 4 -->
-                    <h3 class="projeto__titulo" id="title_4">My server</h3>
-                    <div class="projeto__imagem">
-                        <a href="https://escolha-seu-plano-tau.vercel.app/">
-                            <img src="/SRC/assets/image/baixados.png" alt="Imagem do Projeto myserver">
-                        </a>
-                    </div>
-
-                    <button class="button_explicacao" id="button_explicacao4">
-                        <p class="projeto__descricao">Explicação</p>
-                    </button>
-                    <dialog class="diolog" id="dialog_4">
-                        <div class="dialog-container">
-                            <p class="projeto__descricao_texto" id="explicacao_4">
-                                Escolha seu Plano é um projeto front-end desenvolvido com HTML5, CSS3 e JavaScript, que
-                                simula uma landing page de apresentação de planos de assinatura. O objetivo é oferecer
-                                uma
-                                interface clara e responsiva onde o usuário pode comparar três planos (Essencial,
-                                Premium e
-                                Gold), visualizando preços, benefícios e botões de ação. O layout foi construído com
-                                foco em
-                                design moderno, usabilidade e responsividade, utilizando conceitos como flexbox,
-                                componentização de cards e deploy na Vercel. Esse projeto me permitiu aprimorar
-                                habilidades
-                                em estruturação semântica, estilização avançada e publicação de sites, sendo uma base
-                                sólida
-                                para páginas comerciais reais.
-                            </p>
-                            <div class="button_closed">
-                                <button class="fechar_botao" id="button_closed4">Fechar</button>
-                            </div>
-                        </div>
-                    </dialog>
-                </article>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="projetos__titulo" id="contato">Contato</div>
-        <div class="box_footer">
-            <div class="introducao__imagem_mobile">
-                <img class=".imagem_introduçao" src="/SRC/assets/image/Foto para perfil simples com borda azul .png">
-            </div>
-            <div class="button_footer">
-                <button type="button">
-                    <a href="https://www.linkedin.com/in/arthurlimaqz/">Linkedin</a></button>
-                <button type="button">
-                    <a href="https://github.com/ArthurLimaQz">GitHub</a>
-                </button>
-                <div class="contato">
-                    <h3>Telefone:</h3>
-                    <p>(35) 9.9937-2321</p>
-                    <h3>E-mail:</h3>
-                    <p>arthur.queiroz@sou.unifeob.edu.br</p>
+                <progress class="tech__progress" value="0" max="100">0%</progress>
+              </div>
+            </li>
+            <li class="tech__item">
+              <div class="tech__skill">
+                <div class="boxporcentagem">
+                  <p class="tech__skill-name">JavaScript</p>
+                  <span>30%</span>
                 </div>
-            </div>
+                <progress class="tech__progress" value="30" max="100">30%</progress>
+              </div>
+            </li>
+            <li class="tech__item">
+              <div class="tech__skill">
+                <div class="boxporcentagem">
+                  <p class="tech__skill-name">Next.js</p>
+                  <span>0%</span>
+                </div>
+                <progress class="tech__progress" value="0" max="100">0%</progress>
+              </div>
+            </li>
+            <li class="tech__item">
+              <div class="tech__skill">
+                <div class="boxporcentagem">
+                  <p class="tech__skill-name">Tailwind CSS
+                  </p>
+                  <span>0%</span>
+                </div>
+                <progress class="tech__progress" value="0" max="100">0%</progress>
+              </div>
+            </li>
+          </ul>
+        </article>
+        <article class="tech__category backend"> <!--Backend-->
+          <p class="tech__category-title">Backend</p>
 
-            <div class="introducao__imagem">
-                <img class=".imagem_introduçao" src="/SRC/assets/image/Foto para perfil simples com borda azul .png">
-            </div>
+          <ul class="tech__list">
+            <li class="tech__item">
+              <div class="tech__skill">
+                <div class="boxporcentagem">
+                  <p class="tech__skill-name">Node.js</p>
+                  <span>0%</span>
+                </div>
+                <progress class="tech__progress" value="0" max="100">0%</progress>
+              </div>
+            </li>
+            <li class="tech__item">
+              <div class="tech__skill">
+                <div class="boxporcentagem">
+                  <p class="tech__skill-name">Python</p>
+                  <span>40%</span>
+                </div>
+                <progress class="tech__progress" value="40" max="100">4%</progress>
+              </div>
+            </li>
+            <li class="tech__item">
+              <div class="tech__skill">
+                <div class="boxporcentagem">
+                  <p class="tech__skill-name">PostgreSQL</p>
+                  <span>0%</span>
+                </div>
+                <progress class="tech__progress" value="0" max="100">0%</progress>
+              </div>
+            </li>
+            <li class="tech__item">
+              <div class="tech__skill">
+                <div class="boxporcentagem">
+                  <p class="tech__skill-name">REST APIs</p>
+                  <span>0%</span>
+                </div>
+                <progress class="tech__progress" value="0" max="100">0%</progress>
+              </div>
+            </li>
+            <li class="tech__item">
+              <div class="tech__skill">
+                <div class="boxporcentagem">
+                  <p class="tech__skill-name">Docker</p>
+                  <span>0%</span>
+                </div>
+                <progress class="tech__progress" value="0" max="100">0%</progress>
+              </div>
+            </li>
+          </ul>
+        </article>
+        <article class="tech__category tools"> <!--Ferramentas-->
+          <p class="tech__category-title">Ferramentas</p>
+
+          <ul class="tech__list">
+            <li class="tech__item">
+              <div class="tech__skill">
+                <div class="boxporcentagem">
+                  <p class="tech__skill-name">Git</p>
+                  <span>70%</span>
+                </div>
+                <progress class="tech__progress" value="70" max="100">70%</progress>
+              </div>
+            </li>
+            <li class="tech__item">
+              <div class="tech__skill">
+                <div class="boxporcentagem">
+                  <p class="tech__skill-name">Figma</p>
+                  <span>50%</span>
+                </div>
+                <progress class="tech__progress" value="50" max="100">50%</progress>
+              </div>
+            </li>
+            <li class="tech__item">
+              <div class="tech__skill">
+                <div class="boxporcentagem">
+                  <p class="tech__skill-name">VS Code</p>
+                  <span>90%</span>
+                </div>
+                <progress class="tech__progress" value="90" max="100">90%</progress>
+              </div>
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section id="projects" class="tech__projects">
+        <div class="tech__header header__projects">
+          <p class="tech__code">// trabalhos recentes</p>
+
+          <h2 class="tech__title">Meus <span>Projetos</span></h2>
         </div>
-        <div class="footer">
-            <p>copyright (©) Arthur Queiroz 2025</p>
+        <article class="project-card project-card--primary">
+
+          <div class="project-card__header">
+            <p class="project-card__title">UI e UX da Americanas</p>
+
+            <div class="project-card__links">
+              <a href="https://github.com/ArthurLimaQz/Melhorias-UX-no-site-Americanas-Framework-para-Gest-o" class="project-card__link">
+                <svg class="project-card__icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                  fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                </svg>
+              </a>
+
+              <a href="https://pi-ihc-americanas.vercel.app/" class="project-card__link">
+                <span class="project-card__icon material-symbols-outlined">
+                  arrow_outward
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <p class="project-card__description">
+            Este projeto teve como objetivo melhorar a experiência do usuário no site da Americanas por meio de uma
+            interface mais intuitiva, acessível e moderna, com navegação otimizada, filtros eficientes, bot de
+            atendimento virtual e aplicação de Design Thinking e boas práticas de desenvolvimento web.
+          </p>
+
+          <ul class="project-card__tech-list">
+            <li class="project-card__tech">HTML</li>
+            <li class="project-card__tech">CSS</li>
+            <li class="project-card__tech">JavaScript</li>
+            <li class="project-card__tech">VS Code</li>
+            <li class="project-card__tech">Design Thinking</li>
+          </ul>
+
+        </article>
+        <article class="project-card project-card--secondary">
+
+          <div class="project-card__header">
+            <p class="project-card__title">Sistema Web de Registro de Cartório</p>
+
+            <div class="project-card__links">
+              <a href="https://github.com/ArthurLimaQz/SISTEMA_WEB_DO_CART-RIO.git" class="project-card__link">
+                <svg class="project-card__icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                  fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                </svg>
+              </a>
+
+              <a href="https://sistema-web-do-cart-rio.onrender.com/" class="project-card__link">
+                <span class="project-card__icon material-symbols-outlined">
+                  arrow_outward
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <p class="project-card__description">
+            Este projeto é um sistema web de registro de cartório desenvolvido com Python (Flask), MySQL, HTML5 e CSS3, que permite cadastro seguro de usuários com bcrypt, registro de nascimentos e autenticação de administrador, seguindo boas práticas de segurança, organização modular e usabilidade.
+          </p>
+
+          <ul class="project-card__tech-list">
+            <li class="project-card__tech">HTML</li>
+            <li class="project-card__tech">CSS</li>
+            <li class="project-card__tech">Python(Flask)</li>
+            <li class="project-card__tech">bcrypt</li>
+            <li class="project-card__tech">SQL</li>
+          </ul>
+
+        </article>
+        <article class="project-card project-card--tertiary">
+
+          <div class="project-card__header">
+            <p class="project-card__title">NLW com inteligência artificial aplicada</p>
+
+            <div class="project-card__links">
+              <a href="https://github.com/ArthurLimaQz/NLW.git" class="project-card__link">
+                <svg class="project-card__icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                  fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                </svg>
+              </a>
+
+              <a href="https://nlw-arthur-queirozs-projects-3532e8c8.vercel.app/" class="project-card__link">
+                <span class="project-card__icon material-symbols-outlined">
+                  arrow_outward
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <p class="project-card__description">
+            Projeto desenvolvido na NLW Agents da Rocketseat, que utiliza HTML, CSS e JavaScript para criar uma interface web capaz de integrar com a API da OpenAI e exibir respostas de IA renderizadas em Markdown.
+          </p>
+
+          <ul class="project-card__tech-list">
+            <li class="project-card__tech">HTML</li>
+            <li class="project-card__tech">CSS</li>
+            <li class="project-card__tech">JavaScript</li>
+            <li class="project-card__tech">API da OpenAI</li>
+            <li class="project-card__tech">Markdown</li>
+          </ul>
+
+        </article>
+        <article class="project-card project-card--quaternary">
+
+          <div class="project-card__header">
+            <p class="project-card__title">My server</p>
+
+            <div class="project-card__links">
+              <a href="https://github.com/ArthurLimaQz/Escolha-seu-plano.git" class="project-card__link">
+                <svg class="project-card__icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                  fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                </svg>
+              </a>
+
+              <a href="https://escolha-seu-plano-tau.vercel.app/" class="project-card__link">
+                <span class="project-card__icon material-symbols-outlined">
+                  arrow_outward
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <p class="project-card__description">
+            Projeto front-end desenvolvido com HTML5, CSS3 e JavaScript que simula uma landing page responsiva de planos de assinatura, focada em design moderno, usabilidade e comparação de planos, utilizando Flexbox e com deploy na Vercel.
+          </p>
+
+          <ul class="project-card__tech-list">
+            <li class="project-card__tech">HTML</li>
+            <li class="project-card__tech">CSS</li>
+            <li class="project-card__tech">JavaScript</li>
+            <li class="project-card__tech">Flexbox</li>
+            <li class="project-card__tech">Vercel</li>
+          </ul>
+
+        </article>
+      </section>
+      <section id="contact" class="contact">
+        <div class="contact__header">
+          <p class="contact__code">// vamos conversar</p>
+          <h2 class="contact__title">Entre em <span>Contato</span></h2>
+          <p class="contact__description">
+            Estou sempre aberto a novas oportunidades e colaborações.
+            Sinta-<br>se à vontade para entrar em contato.
+          </p>
         </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="/SRC/js/scripts.js"></script>
-    <script src="/SRC/js/modal.js"></script>
+        <div class="contact__social">
+          <ul class="contact__list">
+            <li class="contact__item github">
+              <a href="https://github.com/ArthurLimaQz" class="contact__link">
+                <svg class="contact__icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                  class="bi bi-github" viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                </svg>
+                <div class="contact__text">
+                  <p class="contact__name">GitHub</p>
+                  <p class="contact__value">@ArthurLimaQz</p>
+                </div>
+              </a>
+            </li>
+            <li class="contact__item linkedin">
+              <a href="https://www.linkedin.com/in/arthurlimaqz/" class="contact__link">
+                <svg class="contact__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px"
+                  height="30px" fill="currentColor">
+                  <path
+                    d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z" />
+                </svg>
+                <div class="contact__text">
+                  <p class="contact__name">LinkedIn</p>
+                  <p class="contact__value">arthurlimaqz</p>
+                </div>
+              </a>
+            </li>
+            <li class="contact__item email">
+              <a href="mailto:arthur.queiroz@sou.unifeob.edu.br" class="contact__link">
+                <svg class="contact__icon" width="30px" height="30px" viewBox="0 -2.5 20 20" version="1.1"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                  <title>email [#1573]</title>
+                  <desc>Created with Sketch.</desc>
+                  <defs>
+
+                  </defs>
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Dribbble-Light-Preview" transform="translate(-300.000000, -922.000000)" fill="currentColor">
+                      <g id="icons" transform="translate(56.000000, 160.000000)">
+                        <path
+                          d="M262,764.291 L254,771.318 L246,764.281 L246,764 L262,764 L262,764.291 Z M246,775 L246,766.945 L254,773.98 L262,766.953 L262,775 L246,775 Z M244,777 L264,777 L264,762 L244,762 L244,777 Z"
+                          id="email-[#1573]">
+
+                        </path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                <div class="contact__text">
+                  <p class="contact__name">Email</p>
+                  <p class="contact__value">arthur.queiroz@sou.unifeob.edu.br</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <p class="footer__text">Feito com código & café</p>
+  </footer>
 </body>
+<script src="/src/js/main.js"></script>
 
 </html>
