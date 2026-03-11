@@ -193,8 +193,7 @@
 .tech__progress {
   width: 100%;
   height: 4px;
-  -moz-appearance: none;
-       appearance: none;
+  appearance: none;
   -webkit-appearance: none;
   overflow: hidden;
   border-radius: 5px;
@@ -364,4 +363,6 @@
     grid-template-columns: 1fr;
     grid-template-areas: "github" "linkedin" "email";
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
