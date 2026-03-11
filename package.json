@@ -1,25 +1,9 @@
 {
-  "name": "projeto---portifolio---antigo",
-  "version": "1.0.0",
-  "description": "Bem-vindo ao meu portfólio! Aqui você encontra meus projetos pessoais, habilidades e formas de contato. Este repositório serve como vitrine do meu trabalho.",
-  "main": "index.js",
   "scripts": {
-    "build": "sass src/style/style.scss src/style/style.css --no-source-map",
-    "dev": "sass --watch src/style/style.scss src/style/style.css"
+    "build": "sass .src/scss/style.scss .src/style/style.css",
+    "watch": "sass --watch .src/scss/style.scss .src/style/style.css"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ArthurLimaQz/Portifolio.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/ArthurLimaQz/Portifolio/issues"
-  },
-  "homepage": "https://github.com/ArthurLimaQz/Portifolio#readme",
   "devDependencies": {
-    "sass": "^1.97.3"
+    "sass": "^1.80.0"
   }
 }
