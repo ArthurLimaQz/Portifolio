@@ -1,17 +1,10 @@
 {
-  "name": "portfolio-arthur",
-  "version": "1.0.0",
-  "description": "Portfolio de Arthur Queiroz",
-  "main": "index.html",
-  "scripts": {
-    "build": "sass src/scss/style.scss src/style/style.css",
-    "watch": "sass --watch src/scss/style.scss src/style/style.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "Arthur Queiroz",
-  "license": "ISC",
   "devDependencies": {
-    "sass": "^1.80.0"
-  }
+    "sass": "^1.98.0"
+  },
+  "scripts": {
+  "build": "npx sass src/scss/style.scss src/style/style.css",
+  "watch": "sass --watch src/scss/style.scss src/style/style.css"
 }
+}
+
