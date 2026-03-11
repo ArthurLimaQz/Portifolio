@@ -3,8 +3,7 @@
     "sass": "^1.98.0"
   },
   "scripts": {
-  "build": "npx sass src/scss/style.scss src/style/style.css",
-  "watch": "sass --watch src/scss/style.scss src/style/style.css"
+    "build": "sass src/scss/style.scss src/style/style.css",
+    "watch": "sass --watch src/scss/style.scss src/style/style.css"
+  }
 }
-}
-
