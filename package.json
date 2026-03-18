@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "Bem-vindo ao meu portfólio! Aqui você encontra meus projetos pessoais, habilidades e formas de contato. Este repositório serve como vitrine do meu trabalho.",
   "main": "index.js",
-  "scripts": {
-    "build": "sass src/style/style.scss src/style/style.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "scripts": {
+       "build": "sass src/style/style.scss src/style/style.css --no-source-map"
+     },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ArthurLimaQz/Portifolio.git"
