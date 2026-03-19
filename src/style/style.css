@@ -372,8 +372,6 @@
     justify-content: center;
     gap: 1rem;
   }
-}
-@media (max-width: 375px) {
   .hero .hero__title {
     text-align: center;
   }
