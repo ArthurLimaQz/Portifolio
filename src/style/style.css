@@ -59,7 +59,7 @@
 }
 .hero .hero__title {
   color: white;
-  font-size: 4.5em;
+  font-size: 4.5rem;
   font-family: var(--fontfamily);
 }
 .hero .hero__title span {
@@ -193,7 +193,8 @@
 .tech__progress {
   width: 100%;
   height: 4px;
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   -webkit-appearance: none;
   overflow: hidden;
   border-radius: 5px;
@@ -364,3 +365,16 @@
     grid-template-areas: "github" "linkedin" "email";
   }
 }
+@media (max-width: 425px) {
+  .nav {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+@media (max-width: 375px) {
+  .hero .hero__title {
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */
